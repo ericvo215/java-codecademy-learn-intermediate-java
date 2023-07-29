@@ -1,0 +1,9 @@
+// System.out
+int age = 15;
+System.out.printf("hello %d", age);
+// The Scanner Class
+Scanner input  = new Scanner(System.in);
+// Scanner Functionality
+// FileReader
+// FileWrite
+// IOExceptions
