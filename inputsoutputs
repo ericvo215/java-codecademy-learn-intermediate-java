@@ -35,6 +35,43 @@ public class Introduction {
   }
 }
 
+//FileWriter 
+import java.io.FileWriter;
+import java.io.IOException;
+public class Introduction {
+  public static void main(String[] args) throws IOException {
+    // Your code here:
+    FileWriter output1 = new FileWriter("output.txt");
+    String outputText = "Hello Lexi. Are you wilding";
+    output1.write(outputText);
+    output1.close();
+  }
+}
+
+// IOException try/catch output
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Introduction {
+  public static void main(String[] args) {
+    String path = "/a/bad/file/path/to/thisFile.txt";
+    try {
+      FileReader reader = new FileReader(path);  
+      while (reader.ready()) {    
+        System.out.print((char) reader.read());    
+      }    
+      reader.close();
+    } catch (IOException e) {
+      System.out.println("There has been an IO exception!");
+      System.out.println(e);
+    }
+  }
+}
+
+// Compiling code
+// javac = compile .java file
+// java fileName = runs the executable
+
 
 // Scanner Functionality
 // FileReader
